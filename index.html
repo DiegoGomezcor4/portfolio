@@ -6,11 +6,11 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="dark-mode">
     <header>
-        <h1>My Portfolio</h1>
+        <h1 id="portfolio-title">My Portfolio</h1>
         <button id="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
-        <button onclick="changeLanguage()">Change Language</button>
+        <button class="boton" onclick="changeLanguage()">Change Language</button>
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
@@ -21,17 +21,17 @@
     </header>
     
     <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm [Your Name], a [Your Profession] passionate about [Your Passion].</p>
+        <h2 id="about-title">About Me</h2>
+        <p id="about-me">Hello, I'm Diego, web developer and passionate about programming.</p>
     </section>
     
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
+        <div class="project dark-mode">
             <h3>Project 1</h3>
             <p>Description of project 1.</p>
         </div>
-        <div class="project">
+        <div class="project dark-mode">
             <h3>Project 2</h3>
             <p>Description of project 2.</p>
         </div>
@@ -40,7 +40,7 @@
     
     <section id="contact">
         <h2>Contact</h2>
-        <p>You can contact me via [your email] or on my social media:</p>
+        <p>You can <a href="mailto:diegocor4@gmail.com">send me a mail</a> or on my social media:</p>
         <ul>
             <li><a href="[link to your LinkedIn profile]">LinkedIn</a></li>
             <li><a href="[link to your GitHub profile]">GitHub</a></li>

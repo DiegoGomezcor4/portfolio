@@ -1,4 +1,4 @@
-var language = "english";
+var language = "english"; // Inicialmente en inglés
 
 function changeLanguage() {
     var elements = document.querySelectorAll('h1, h2, h3, p, li');
@@ -12,13 +12,9 @@ function changeLanguage() {
 }
 
 function switchToSpanish(element) {
-    switch (element.textContent) {
-        case "My Portfolio":
-            element.textContent = "Mi Portafolio";
-            break;
-        case "About Me":
-            element.textContent = "Acerca de Mí";
-            break;
+    console.log(element.textContent.trim()); // Imprime el contenido de element.textContent después de recortar los espacios en blanco
+    switch (element.textContent.trim()) {
+       
         case "Projects":
             element.textContent = "Proyectos";
             break;
@@ -47,17 +43,26 @@ function switchToSpanish(element) {
             element.textContent = "GitHub";
             break;
     }
+    // Titulo
+    var parrafo = document.getElementById('portfolio-title');
+    parrafo.textContent = "Mi Portafolio";
+
+    // About Titulo
+    var parrafo = document.getElementById('about-title');
+    parrafo.textContent = "Acerca de Mí";
+
+     // Acerca de mi parrafo
+     var parrafo = document.getElementById('about-me');
+     parrafo.textContent = "Hola soy Diego Desarrollador web y apasionado por la programacion.";
+
+
+    // Cambia el idioma a español
     language = "spanish";
 }
 
 function switchToEnglish(element) {
-    switch (element.textContent) {
-        case "Mi Portafolio":
-            element.textContent = "My Portfolio";
-            break;
-        case "Acerca de Mí":
-            element.textContent = "About Me";
-            break;
+    switch (element.textContent.trim()) {
+    
         case "Proyectos":
             element.textContent = "Projects";
             break;
@@ -86,10 +91,32 @@ function switchToEnglish(element) {
             element.textContent = "GitHub";
             break;
     }
+
+    // Titulo
+    var parrafo = document.getElementById('portfolio-title');
+    parrafo.textContent = "My Portfolio";
+
+     // About Titulo
+     var parrafo = document.getElementById('about-title');
+     parrafo.textContent = "About Me";
+
+    // acerca de mi parrafo español-->ingles
+    var parrafo = document.getElementById('about-me');
+    parrafo.textContent = "Hello, I'm Diego, web developer and passionate about programming."
+
+
+    // Cambia el idioma a inglés
     language = "english";
 }
 
 function toggleDarkMode() {
     var body = document.body;
     body.classList.toggle('dark-mode');
+
+    var projects = document.querySelectorAll('.project');
+
+    projects.forEach(function(project) {
+        project.classList.toggle('dark-mode');
+    });
+
 }
