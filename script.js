@@ -88,3 +88,8 @@ function switchToEnglish(element) {
     }
     language = "english";
 }
+
+function toggleDarkMode() {
+    var body = document.body;
+    body.classList.toggle('dark-mode');
+}
