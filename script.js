@@ -16,13 +16,13 @@ function switchToSpanish(element) {
     switch (element.textContent.trim()) {
        
        
-        case "Contact":
-            element.textContent = "Contacto";
-            break;
+        // case "Contact":
+        //     element.textContent = "Contacto";
+        //     break;
      
-        case "You can contact me via [your email] or on my social media:":
-            element.textContent = "Puedes contactarme a través de [tu correo electrónico] o en mis redes sociales:";
-            break;
+        // case "You can contact me via [your email] or on my social media:":
+        //     element.textContent = "Puedes contactarme a través de [tu correo electrónico] o en mis redes sociales:";
+        //     break;
        
     }
     // Titulo
@@ -50,12 +50,12 @@ function switchToEnglish(element) {
     switch (element.textContent.trim()) {
     
         
-        case "Contacto":
-            element.textContent = "Contact";
-            break;
-        case "Puedes contactarme a través de [tu correo electrónico] o en mis redes sociales:":
-            element.textContent = "You can contact me via [your email] or on my social media:";
-            break;
+        // case "Contacto":
+        //     element.textContent = "Contact";
+        //     break;
+        // case "Puedes contactarme a través de [tu correo electrónico] o en mis redes sociales:":
+        //     element.textContent = "You can contact me via [your email] or on my social media:";
+        //     break;
         
 
     // Titulo
